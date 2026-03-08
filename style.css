@@ -206,6 +206,47 @@ a {
   transform: translateY(-1px);
 }
 
+/* Nav on dark hero */
+.nav-dark .nav-logo { color: #F0EDE8; }
+.nav-dark .nav-badge { color: rgba(240,237,232,0.45); }
+.nav-dark .nav-links a { color: rgba(240,237,232,0.45); }
+.nav-dark .nav-links a:hover,
+.nav-dark .nav-links a.active {
+  color: #F0EDE8;
+  border-color: rgba(240,237,232,0.2);
+}
+
+.nav-dark.scrolled {
+  background: rgba(12, 12, 12, 0.88);
+  border-color: rgba(240,237,232,0.08);
+}
+.nav-dark.scrolled .nav-logo { color: #F0EDE8; }
+.nav-dark.scrolled .nav-badge { color: rgba(240,237,232,0.4); }
+.nav-dark.scrolled .nav-links a { color: rgba(240,237,232,0.4); }
+.nav-dark.scrolled .nav-links a:hover,
+.nav-dark.scrolled .nav-links a.active {
+  color: #F0EDE8;
+  border-color: rgba(240,237,232,0.2);
+}
+
+/* Hero bottom fade into cream */
+#hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 180px;
+  background: linear-gradient(to bottom, transparent, #F5F0E8);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.marquee-outer {
+  position: relative;
+  z-index: 2;
+}
+
 
 /* ============================================================
    04. BUTTONS

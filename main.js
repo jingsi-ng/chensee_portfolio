@@ -37,7 +37,21 @@
 (function initNav() {
   const nav = document.querySelector('.nav');
   if (!nav) return;
-  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
+
+  const hero = document.getElementById('hero');
+
+  const onScroll = () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+
+    if (hero && document.body.classList.contains('nav-dark')) {
+      const heroBottom = hero.getBoundingClientRect().bottom;
+      if (heroBottom < 64) {
+        document.body.classList.remove('nav-dark');
+        nav.classList.toggle('scrolled', window.scrollY > 40);
+      }
+    }
+  };
+
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 })();
