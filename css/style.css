@@ -1165,6 +1165,25 @@ a   { color: inherit; text-decoration: none; }
 .t-orange { color: var(--accent); }
 .t-dim    { color: rgba(240,235,225,0.18); }
 
+.posters-side-by-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.poster-item > div:first-child {
+  aspect-ratio: 2/3;
+  overflow: hidden;
+  max-height: 480px;
+}
+
+.poster-item > div:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 /* ── 16. RESPONSIVE ── */
 @media (max-width: 1024px) {
