@@ -272,7 +272,7 @@ a   { color: inherit; text-decoration: none; }
 }
 .hero-line.outline .hero-line-inner {
   color: transparent;
-  -webkit-text-stroke: 1.5px rgba(240,235,225,0.16);
+  -webkit-text-stroke: 1.5px rgba(240,235,225,0.38);
   font-style: italic;
 }
 .hero-line .ac {
@@ -297,40 +297,17 @@ a   { color: inherit; text-decoration: none; }
 .meta-label {
   font-family: var(--mono); font-size: 9px;
   letter-spacing: .18em; text-transform: uppercase;
-  color: var(--dim); margin-bottom: 5px;
+  color: var(--muted); margin-bottom: 5px;
 }
 .meta-val {
   font-family: var(--mono); font-size: 11px;
-  color: var(--muted); line-height: 1.6;
+  color: var(--cream); line-height: 1.6;
 }
 .meta-status { display: flex; align-items: center; gap: 7px; justify-content: flex-end; }
 .meta-dot {
   width: 5px; height: 5px; border-radius: 50%;
   background: #4CAF50;
   animation: dotPulse 2.5s ease-in-out infinite;
-}
-
-/* Scroll hint */
-.scroll-hint {
-  position: absolute; bottom: 88px; left: 52px;
-  z-index: 2;
-  display: flex; flex-direction: column; align-items: center; gap: 10px;
-  opacity: 0; animation: fadeIn .8s 1.2s forwards;
-}
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-.scroll-line {
-  width: 1px; height: 44px;
-  background: linear-gradient(to bottom, transparent, rgba(240,235,225,.2));
-  animation: scrollPulse 2.2s ease-in-out infinite;
-}
-@keyframes scrollPulse {
-  0%,100% { opacity: .3; } 50% { opacity: .9; }
-}
-.scroll-text {
-  font-family: var(--mono); font-size: 9px;
-  letter-spacing: .2em; text-transform: uppercase;
-  color: var(--dim); writing-mode: vertical-rl;
-  transform: rotate(180deg);
 }
 
 /* Hero bottom bar */
@@ -1076,7 +1053,6 @@ a   { color: inherit; text-decoration: none; }
   .hero-meta-right { display: none; }
   .hero-bottom { padding: 0 24px 48px; flex-direction: column; align-items: flex-start; gap: 20px; }
   .hero-desc { text-align: left; }
-  .scroll-hint { display: none; }
   .section-pad, .section-pad-sm { padding: 72px 24px; }
   .about-preview { grid-template-columns: 1fr; }
   .proj-row { grid-template-columns: 48px 1fr; gap: 14px; }
