@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 451 — Chen See Ng</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Geist+Mono:wght@300;400;500&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="cur"></div>
+  <div id="cur-ring"></div>
+
+  <nav class="nav">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo">Chen See Ng · 黄靖思 · 黄靖思/a>
+      <div class="nav-badge"><div class="status-dot"></div>Open to Work</div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="work.html" class="active">Work</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Hire Me ↗</a>
+  </nav>
+
+  <!-- Dark hero for this project -->
+  <div class="cs-hero p451">
+    <div class="cs-hero-grid"></div>
+    <a href="work.html" class="cs-back">← Back to Work</a>
+    <div class="cs-type">001 · Speculative Fiction Web Experience</div>
+    <h1 class="cs-title">Project<br><em>451</em></h1>
+    <div class="cs-meta-row">
+      <div class="cs-meta-item">
+        <div class="cs-meta-label">Year</div>
+        <div class="cs-meta-val">2025</div>
+      </div>
+      <div class="cs-meta-item">
+        <div class="cs-meta-label">Stack</div>
+        <div class="cs-meta-val">Astro · Supabase · JavaScript</div>
+      </div>
+      <div class="cs-meta-item">
+        <div class="cs-meta-label">Architecture</div>
+        <div class="cs-meta-val">SSG · Component-based · Dynamic DB</div>
+      </div>
+      <div class="cs-meta-item">
+        <div class="cs-meta-label">Live</div>
+        <div class="cs-meta-val">
+          <a href="https://memoryvault-451.netlify.app" class="cs-live-link-dark">View Project ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cs-body">
+
+    <!-- Overview -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Overview</div>
+      <h2 class="cs-h3">A dystopian digital archive</h2>
+      <div class="cs-section-body">
+        <p>
+          <strong>Project 451 is a speculative fiction web experience</strong> inspired by
+          Fahrenheit 451 — Ray Bradbury's novel about a future where books are banned and
+          "firemen" burn them. The project transforms the novel's themes of censorship,
+          memory, and resistance into an interactive digital archive.
+        </p>
+        <p>
+          The concept: what if the book-preservers in the novel had a secret digital archive?
+          Users enter a classified, terminal-style interface and navigate through censored
+          documents, hidden records, and narrative-driven content — as if they're accessing
+          something they're not supposed to see.
+        </p>
+      </div>
+
+      <!-- Terminal flavour block -->
+      <div class="terminal-block">
+        <span class="t-dim">// CLASSIFIED — ARCHIVE ACCESS GRANTED</span><br>
+        <span class="t-green">▸</span> <span class="t-orange">PROJECT_451</span> — initializing...<br>
+        <span class="t-green">▸</span> Supabase connection <span class="t-green">[ OK ]</span><br>
+        <span class="t-green">▸</span> Dynamic content loading <span class="t-green">[ OK ]</span><br>
+        <span class="t-green">▸</span> State transitions <span class="t-green">[ OK ]</span><br>
+        <span class="t-dim">// Warning: Unauthorized access will be reported.</span>
+      </div>
+    </div>
+
+    <!-- Screenshots -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Screens & Interface</div>
+      <div class="cs-two-col">
+        <div class="cs-img-placeholder tall">[ Onboarding / Entry Screen ]</div>
+        <div class="cs-img-placeholder tall">[ Archive / Modal Interface ]</div>
+      </div>
+      <div class="cs-img-placeholder cs-img-wide">
+        [ Full Dashboard / Archive View ]
+      </div>
+    </div>
+
+    <!-- Design decisions -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Design Decisions</div>
+      <h2 class="cs-h3">When the interface <em>is</em> the story</h2>
+      <div class="cs-section-body">
+        <p>
+          The guiding principle was simple: <strong>every UI element had to earn its place
+          within the fiction.</strong> This isn't a website about Fahrenheit 451 — it's a
+          website that exists inside the world of Fahrenheit 451. That distinction shaped
+          every decision.
+        </p>
+        <p>
+          The black-dominant palette and degraded monospace typography weren't aesthetic
+          choices — they were worldbuilding. They signal a system that operates in the
+          margins, built by people who can't afford to be visible. The opening "WARNING:
+          RESTRICTED AREA" modal doesn't just set the tone; it asks the user to commit
+          to the premise before they can enter.
+        </p>
+        <p>
+          Status indicators borrowed from real system UIs — <em>SYSTEM ONLINE</em>,
+          <em>THREAT LEVEL: ELEVATED</em>, <em>ARCHIVE STATUS: SECURE</em> — were
+          deliberately designed to feel familiar and institutional, which makes them
+          feel more unsettling in this context. <strong>The uncanny comes from recognising
+          something real in a fictional frame.</strong>
+        </p>
+        <p>
+          CSS animations were restrained on purpose. Loading states, blinking cursors,
+          and the `>` prompt prefix do more atmospheric work than a dozen scroll effects
+          ever could.
+        </p>
+      </div>
+    </div>
+
+    <!-- Technical -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Technical Approach</div>
+      <h2 class="cs-h3">Astro + Supabase: a real stack for a fictional world</h2>
+      <div class="cs-section-body">
+        <p>
+          The brief called for a functional web experience — but I wanted to go further
+          and build something that behaved like a real application, not just a static
+          page dressed up to look dynamic.
+        </p>
+        <p>
+          <strong>Astro</strong> was the right framework for this: its component-based
+          architecture let me build reusable "archive entry" and "classified document"
+          components, while its SSG model kept the build fast and deployable to Netlify
+          without a server. Critically, Astro's islands architecture meant interactive
+          components only hydrated where needed — no unnecessary JavaScript overhead.
+        </p>
+        <p>
+          <strong>Supabase</strong> provided the PostgreSQL backend. Archive entries —
+          the "preserved texts" — are stored in a real database and queried on page load,
+          which means the archive genuinely grows when users register and submit content.
+          This was my first time connecting a frontend project to a live backend service,
+          and it fundamentally changed how I think about the data layer.
+        </p>
+        <p>
+          <strong>User authentication</strong> was implemented with Supabase Auth — users
+          register a "keycard," log in, and gain access to the restricted archive. Session
+          state persists across page navigation, with JavaScript managing route-level access
+          control on the client side. The `LEVEL 1 CLEARANCE` login screen isn't decorative;
+          it's a real auth gate.
+        </p>
+      </div>
+    </div>
+
+    <!-- Challenges -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Challenges</div>
+      <h2 class="cs-h3">Where it got difficult</h2>
+      <div class="cs-section-body">
+        <p>
+          The hardest problem was <strong>synchronising Supabase's async data fetching
+          with Astro's SSG pipeline.</strong> Astro pre-renders pages at build time —
+          but the archive content is dynamic and user-generated, so it can't be known
+          at build time. The solution was to use Astro's server-side rendering mode
+          selectively for dynamic routes while keeping static generation for everything
+          else, which required careful routing decisions early in the project.
+        </p>
+        <p>
+          Managing <strong>client-side session state without a framework like React</strong>
+          was a deliberate constraint I set for myself. Every auth check, redirect, and
+          conditional render was handled in vanilla JavaScript. It was tedious at times,
+          but it forced me to understand what frameworks actually abstract away — and when
+          that abstraction is genuinely worth it.
+        </p>
+        <p>
+          Getting the <strong>classified modal to feel right</strong> took longer than
+          expected. The tension between theatricality and usability is real — too much
+          animation and it becomes annoying; too little and the fiction falls flat.
+          I settled on a single typewriter reveal with no looping effects.
+        </p>
+      </div>
+    </div>
+
+    <!-- Reflection -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Reflection</div>
+      <h2 class="cs-h3">What I took away</h2>
+      <div class="cs-learnings">
+        <div class="cs-learning-item">
+          <div class="cs-learning-num">01 · Learned</div>
+          <div class="cs-learning-text">
+            <strong>Backend integration changes your design thinking.</strong> Once the
+            archive became a live database rather than static HTML, I had to consider
+            empty states, loading states, error states, and edge cases I'd never thought
+            about when building purely static work. UX and engineering are not separate
+            disciplines.
+          </div>
+        </div>
+        <div class="cs-learning-item">
+          <div class="cs-learning-num">02 · Would Do Differently</div>
+          <div class="cs-learning-text">
+            <strong>I'd define the data schema earlier.</strong> I refactored the
+            Supabase table structure mid-project when I realised my original schema
+            didn't support the filtering and classification system I wanted. Schema
+            design is a design problem, not just a backend one.
+          </div>
+        </div>
+        <div class="cs-learning-item">
+          <div class="cs-learning-num">03 · Proud Of</div>
+          <div class="cs-learning-text">
+            <strong>The narrative coherence.</strong> Every screen — from the
+            onboarding modal to the empty-archive state ("The Vault is Empty. No texts
+            have been preserved yet.") — speaks the same fictional language.
+            The copy, the UI, the data model, and the visual design all tell the same story.
+            That kind of consistency across layers is what I care most about.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Links -->
+    <div class="cs-section reveal cs-section-actions">
+      <a href="https://memoryvault-451.netlify.app" target="_blank" class="btn-primary">View Live Site ↗</a>
+      <a href="https://github.com/jingsi-ng" target="_blank" class="btn-ghost">GitHub →</a>
+    </div>
+
+  </div>
+
+  <div class="cs-nav-row">
+    <a href="work.html" class="cs-nav-item">
+      <div class="cs-nav-dir">← All Projects</div>
+      <div class="cs-nav-name">Back to Work</div>
+    </a>
+    <a href="case-study-blackpink.html" class="cs-nav-item next">
+      <div class="cs-nav-dir">Next Project →</div>
+      <div class="cs-nav-name"><em>Blackpink</em> Fan Website</div>
+    </a>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-l">&copy; 2026 Chen See Ng · 黄靖思</div>
+    <ul class="footer-nav">
+      <li><a href="work.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="footer-r">Designed & built <span>by me</span></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albert Camus Tribute Page — Chen See Ng</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Geist+Mono:wght@300;400;500&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="cur"></div>
+  <div id="cur-ring"></div>
+
+  <nav class="nav">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo">Chen See Ng · 黄靖思 · 黄靖思/a>
+      <div class="nav-badge"><div class="status-dot"></div>Open to Work</div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="work.html" class="active">Work</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Hire Me ↗</a>
+  </nav>
+
+  <div class="cs-hero">
+    <div class="cs-hero-grid"></div>
+    <a href="work.html" class="cs-back">← Back to Work</a>
+    <div class="cs-type">004 · Tribute / Literary</div>
+    <h1 class="cs-title">Albert Camus<br><em>Tribute</em> Page</h1>
+    <div class="cs-meta-row">
+      <div class="cs-meta-item">
+        <div class="cs-meta-label">Year</div>
+        <div class="cs-meta-val">2025</div>
+      </div>
+      <div class="cs-meta-item">
+        <div class="cs-meta-label">Module</div>
+        <div class="cs-meta-val">Web Authoring</div>
+      </div>
+      <div class="cs-meta-item">
+        <div class="cs-meta-label">Stack</div>
+        <div class="cs-meta-val">HTML · CSS · Typography</div>
+      </div>
+      <div class="cs-meta-item">
+        <div class="cs-meta-label">Live</div>
+        <div class="cs-meta-val"><a href="#" class="cs-live-link">View Project ↗</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cs-body">
+
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Overview</div>
+      <h2 class="cs-h3">A literary tribute built in pure HTML & CSS</h2>
+      <div class="cs-section-body">
+        <p>
+          This tribute page was built as a Web Authoring assignment — the brief was
+          to create a multi-page informational website about a subject of our choice
+          using only HTML and CSS. I chose Albert Camus because his work sits at the
+          intersection of literature, philosophy, and politics in a way I find genuinely
+          compelling. <strong>The absurd as a design principle, not just a subject.</strong>
+        </p>
+        <p>
+          The site covers Camus's biography through an interactive timeline, his major
+          works, key philosophical themes (The Absurd, Revolt, Living Without Appeal),
+          and an AI-assisted news feed covering contemporary Camus scholarship — built
+          to demonstrate how his ideas remain relevant today.
+        </p>
+        <p>
+          The constraint was the point: no JavaScript, no frameworks, no libraries.
+          Everything the site does — the timeline, the multi-page navigation, the
+          typographic rhythm — is pure HTML and CSS craft.
+        </p>
+      </div>
+    </div>
+
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Screens & Interface</div>
+      <div class="cs-two-col">
+        <div class="cs-img-placeholder">[ Hero — L'Absurde ]</div>
+        <div class="cs-img-placeholder">[ Biography Timeline ]</div>
+      </div>
+      <div class="cs-img-placeholder cs-img-wide">[ Key Themes — Three-column Cards ]</div>
+    </div>
+
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Design Decisions</div>
+      <h2 class="cs-h3">Typography as philosophical argument</h2>
+      <div class="cs-section-body">
+        <p>
+          The design needed to feel like the subject: serious, intellectual, and
+          European without being cold. <strong>The starting point was the hero image</strong> —
+          a full-bleed black-and-white photograph of Camus, a man who looked as if he
+          was already living the ideas he would later write down. From that image, the
+          entire palette followed: deep black, off-white, and a warm gold that read as
+          both archival and alive.
+        </p>
+        <p>
+          Serif and monospace fonts were paired throughout — <em>Times New Roman</em>
+          anchoring the editorial tone, a monospace face used for dates, labels, and
+          cross-references, nodding to the archival quality of historical record.
+          The combination says: this is serious literature, but it's also a system.
+        </p>
+        <p>
+          <strong>Whitespace was the primary layout tool.</strong> Camus wrote about
+          silence and the space between things. A dense, busy layout would have
+          contradicted the subject. Every section has room to breathe.
+        </p>
+        <p>
+          The vertical timeline on the biography page uses a CSS-only approach —
+          a centred line with alternating left/right content blocks — that creates
+          a sense of historical progression without animation or JavaScript. The
+          year markers in gold draw the eye down the page.
+        </p>
+      </div>
+    </div>
+
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Technical Approach</div>
+      <h2 class="cs-h3">What pure CSS can do</h2>
+      <div class="cs-section-body">
+        <p>
+          The no-JavaScript constraint turned out to be generative. It forced me to
+          think carefully about what CSS alone is capable of — and to use it properly
+          rather than reach for a script as a shortcut.
+        </p>
+        <p>
+          <strong>The timeline</strong> is built with a CSS pseudo-element vertical
+          line (`::before`) and alternating flex-direction on odd/even list items.
+          The expanding year-detail layout uses the sibling combinator to reveal
+          content on `:focus` — no JavaScript required.
+        </p>
+        <p>
+          <strong>The three-column theme cards</strong> use CSS Grid with
+          `grid-template-columns: repeat(3, 1fr)` — collapsing to single column
+          on mobile via a single media query breakpoint. The top border accent
+          on each card is a 3px `border-top` in gold, which does significant
+          visual work with almost no code.
+        </p>
+        <p>
+          <strong>Responsive design</strong> was treated as a core requirement
+          rather than an afterthought. Every section was tested at 320px, 768px,
+          and 1440px widths. The full-bleed hero image uses `object-fit: cover`
+          with a carefully positioned `object-position` to ensure Camus's face
+          remains in frame at all viewport sizes.
+        </p>
+      </div>
+    </div>
+
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Reflection</div>
+      <h2 class="cs-h3">What I took away</h2>
+      <div class="cs-learnings">
+        <div class="cs-learning-item">
+          <div class="cs-learning-num">01 · Learned</div>
+          <div class="cs-learning-text">
+            <strong>Constraints produce clarity.</strong> Working without JavaScript
+            forced me to understand CSS layout at a deeper level than I would have
+            otherwise. I came away with a much stronger command of Grid, Flexbox,
+            pseudo-elements, and the cascade — fundamentals that make everything
+            else faster.
+          </div>
+        </div>
+        <div class="cs-learning-item">
+          <div class="cs-learning-num">02 · Would Do Differently</div>
+          <div class="cs-learning-text">
+            <strong>I'd invest more time in the responsive typography scale.</strong>
+            The headings are set in fixed pixel sizes, which works but isn't ideal.
+            I'd use `clamp()` throughout — as I did later in the portfolio — to make
+            the type feel properly fluid across screen sizes rather than just
+            "not broken."
+          </div>
+        </div>
+        <div class="cs-learning-item">
+          <div class="cs-learning-num">03 · Proud Of</div>
+          <div class="cs-learning-text">
+            <strong>The detail in the timeline.</strong> The vertical gold line
+            with alternating content blocks looks simple, but getting the alignment
+            consistent across breakpoints without JavaScript required careful
+            use of negative margins and absolute positioning — the kind of
+            invisible work that only shows if it goes wrong.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-section reveal cs-section-actions">
+      <a href="https://camus-tribute.netlify.app" target="_blank" class="btn-primary">View Live Site ↗</a>
+      <a href="https://github.com/jingsi-ng" target="_blank" class="btn-ghost">View on GitHub →</a>
+    </div>
+
+  </div>
+
+  <div class="cs-nav-row">
+    <a href="case-study-wordpress.html" class="cs-nav-item">
+      <div class="cs-nav-dir">← Previous</div>
+      <div class="cs-nav-name">WordPress <em>Portfolio</em> CMS</div>
+    </a>
+    <a href="case-study-profile.html" class="cs-nav-item next">
+      <div class="cs-nav-dir">Next Project →</div>
+      <div class="cs-nav-name">Personal <em>Profile</em> Site</div>
+    </a>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-l">&copy; 2026 Chen See Ng · 黄靖思</div>
+    <ul class="footer-nav">
+      <li><a href="work.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="footer-r">Designed & built <span>by me</span></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

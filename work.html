@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chen See Ng — Frontend Developer & Digital Designer</title>
-  <meta name="description" content="Frontend Developer & Digital Designer based in Ireland. MSc Interactive Digital Media. Available for work in Dublin and remote.">
+  <title>Work — Chen See Ng</title>
+  <meta name="description" content="Projects and design work by Chen See Ng — web development, UI design, and visual communication.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Geist+Mono:wght@300;400;500&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400&family=Geist+Mono:wght@200;300;400&family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -16,40 +16,36 @@
 
   <nav class="nav">
     <div class="nav-left">
-      <a href="index.html" class="nav-logo">Chen See Ng</a>
+      <a href="index.html" class="nav-logo">Chen See Ng · 黄靖思</a>
       <div class="nav-badge"><div class="status-dot"></div>Open to Work</div>
     </div>
     <ul class="nav-links">
-        <li><a href="index.html">Home</a> </li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="work.html" class="active">Work</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
     <a href="contact.html" class="nav-cta">Hire Me ↗</a>
   </nav>
 
+  <!-- DARK HERO -->
   <div class="page-hero">
     <div class="page-hero-grid"></div>
-    <div class="page-hero-label">Selected Work</div>
-    <h1 class="page-hero-h1">
-      Things I've<br><em>built & designed</em>
-    </h1>
-    <p class="page-hero-sub">
-      Web development and design projects from my MSc programme — all deployed, all live.
-      Each one taught me something different.
-    </p>
+    <div class="ph-label">Selected Work</div>
+    <h1 class="ph-h1">Things I've<br><em>built & designed</em></h1>
+    <p class="ph-sub">Web development and design projects from my MSc programme — all deployed, all live. Each one taught me something different.</p>
   </div>
 
   <!-- WEB PROJECTS -->
-  <section class="section-wrap">
-    <div class="section-header reveal">
-      <div class="section-num">01 — Web Development</div>
-      <h2 class="section-h2">Built &<br><em>deployed</em></h2>
+  <section class="cream-section section-pad">
+    <div class="reveal" style="margin-bottom:52px">
+      <div class="s-label">01 — Web Development</div>
+      <h2 class="s-h2">Built &<br><em>deployed</em></h2>
     </div>
 
     <div class="projects-grid">
 
-      <!-- Project 451 - featured full-width -->
+      <!-- Project 451 — featured dark full-width -->
       <a href="case-study-project451.html" class="proj-card full proj-card-451 reveal">
         <div class="pc-top">
           <span class="pc-num">001 · Featured</span>
@@ -63,11 +59,11 @@
           Supabase backend, and state-based JavaScript interactions.
         </div>
         <div class="pc-tech">
-          <span class="tech-tag" >Astro</span>
-          <span class="tech-tag" >Supabase</span>
-          <span class="tech-tag" >JavaScript</span>
-          <span class="tech-tag" >SSG</span>
-          <span class="tech-tag" >CSS Animations</span>
+          <span class="tech-tag">Astro</span>
+          <span class="tech-tag">Supabase</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">SSG</span>
+          <span class="tech-tag">CSS Animations</span>
         </div>
       </a>
 
@@ -79,10 +75,7 @@
         </div>
         <div class="pc-type">Editorial / Fan Site</div>
         <div class="pc-name"><em>Blackpink</em><br>Fan Website</div>
-        <div class="pc-desc">
-          An immersive editorial-style fansite with strong visual identity,
-          custom layout, and smooth interactions.
-        </div>
+        <div class="pc-desc">An immersive editorial-style fansite with strong visual identity, custom layout, and smooth interactions.</div>
         <div class="pc-tech">
           <span class="tech-tag">HTML</span>
           <span class="tech-tag">CSS</span>
@@ -103,10 +96,7 @@
         </div>
         <div class="pc-type">CMS / WordPress</div>
         <div class="pc-name">WordPress<br><em>Portfolio</em> CMS</div>
-        <div class="pc-desc">
-          A custom-themed WordPress portfolio with tailored templates,
-          plugin customisation, and a fully managed content system.
-        </div>
+        <div class="pc-desc">A custom-themed WordPress portfolio with tailored templates, plugin customisation, and a fully managed content system.</div>
         <div class="pc-tech">
           <span class="tech-tag">WordPress</span>
           <span class="tech-tag">PHP</span>
@@ -126,17 +116,14 @@
         </div>
         <div class="pc-type">Tribute / Literary</div>
         <div class="pc-name">Albert Camus<br><em>Tribute</em> Page</div>
-        <div class="pc-desc">
-          A literary tribute site capturing the philosophical tone of Camus
-          through careful typography, considered layout, and restrained design.
-        </div>
+        <div class="pc-desc">A literary tribute site capturing the philosophical tone of Camus through careful typography, considered layout, and restrained design.</div>
         <div class="pc-tech">
           <span class="tech-tag">HTML</span>
           <span class="tech-tag">CSS</span>
           <span class="tech-tag">Typography</span>
         </div>
         <div class="pc-links">
-          <a href="#" class="pc-link" onclick="event.stopPropagation()">Live ↗</a>
+          <a href="https://camus-tribute.netlify.app/" target="_blank" class="pc-link" onclick="event.stopPropagation()">Live ↗</a>
           <a href="#" class="pc-link" onclick="event.stopPropagation()">GitHub →</a>
         </div>
       </a>
@@ -149,10 +136,7 @@
         </div>
         <div class="pc-type">Personal / Profile</div>
         <div class="pc-name">Personal<br><em>Profile</em> Site</div>
-        <div class="pc-desc">
-          A self-built personal profile website with custom layout,
-          responsive design, and personality-driven visual choices.
-        </div>
+        <div class="pc-desc">A self-built personal profile website with custom layout, responsive design, and personality-driven visual choices.</div>
         <div class="pc-tech">
           <span class="tech-tag">HTML</span>
           <span class="tech-tag">CSS</span>
@@ -168,76 +152,61 @@
   </section>
 
   <!-- DESIGN WORK -->
-  <section class="section-wrap section-bordered">
-    <div class="section-header reveal">
-      <div class="section-num">02 — Visual Design</div>
-      <h2 class="section-h2">Poster<br><em>designs</em></h2>
+  <section class="cream-section-alt section-pad">
+    <div class="reveal" style="margin-bottom:52px">
+      <div class="s-label">02 — Visual Design</div>
+      <h2 class="s-h2">Poster<br><em>designs</em></h2>
     </div>
 
-    <div class="design-section">
-      <div class="design-grid">
+    <div class="design-grid">
+      <a href="case-study-posters.html" class="design-card reveal">
+        <div class="pc-type">Music Theme · Photoshop</div>
+        <div class="poster-preview poster-music">
+          <div class="poster-scanlines"></div>
+          <div class="poster-music-inner">
+            <div class="poster-title poster-text-music">Resonance</div>
+            <div class="poster-sub poster-sub-music">Music · Sound · Identity</div>
+          </div>
+        </div>
+        <div class="pc-name" style="font-size:20px; margin-bottom:8px">Music <em>Poster</em></div>
+        <div class="pc-desc" style="font-size:13px; margin-bottom:16px">A conceptual music poster exploring sound and visual rhythm through layered gradients and atmospheric composition.</div>
+        <div class="pc-tech">
+          <span class="tech-tag">Photoshop</span>
+          <span class="tech-tag">Visual Design</span>
+          <span class="tech-tag">Typography</span>
+        </div>
+      </a>
 
-        <a href="case-study-posters.html" class="design-card reveal">
-          <div class="pc-type">Music Theme · Photoshop</div>
-          <div class="poster-preview poster-music">
-            <div class="poster-scanlines"></div>
-            <div class="poster-music-inner">
-              <div class="poster-title poster-text-music">Resonance</div>
-              <div class="poster-sub poster-sub-music">Music · Sound · Identity</div>
-            </div>
+      <a href="case-study-posters.html" class="design-card reveal">
+        <div class="pc-type">Film / Cinema Theme · Photoshop</div>
+        <div class="poster-preview poster-film">
+          <div class="poster-film-inner">
+            <div class="poster-title poster-text-film">Cinéma</div>
+            <div class="poster-sub poster-sub-film">Film · Frame · Narrative</div>
           </div>
-          <div class="pc-name pc-name-sm">Music <em>Poster</em></div>
-          <div class="pc-desc pc-desc-sm">
-            A conceptual music poster exploring sound and visual rhythm through
-            layered gradients, editorial typography, and atmospheric composition.
-          </div>
-          <div class="pc-tech">
-            <span class="tech-tag">Photoshop</span>
-            <span class="tech-tag">Visual Design</span>
-            <span class="tech-tag">Typography</span>
-          </div>
-        </a>
-
-        <a href="case-study-posters.html" class="design-card reveal">
-          <div class="pc-type">Film / Cinema Theme · Photoshop</div>
-          <div class="poster-preview poster-film">
-            <div class="poster-film-inner">
-              <div class="poster-title poster-text-film">Cinéma</div>
-              <div class="poster-sub poster-sub-film">Film · Frame · Narrative</div>
-            </div>
-            <div class="poster-bars">
-              <div class="poster-bar"></div><div class="poster-bar"></div>
-              <div class="poster-bar"></div><div class="poster-bar"></div>
-              <div class="poster-bar"></div><div class="poster-bar"></div>
-              <div class="poster-bar"></div><div class="poster-bar"></div>
-            </div>
-          </div>
-          <div class="pc-name pc-name-sm">Film <em>Poster</em></div>
-          <div class="pc-desc pc-desc-sm">
-            A cinematic poster drawing on film grain, warm tones, and the
-            visual language of classic cinema for a modern editorial feel.
-          </div>
-          <div class="pc-tech">
-            <span class="tech-tag">Photoshop</span>
-            <span class="tech-tag">Visual Design</span>
-            <span class="tech-tag">Art Direction</span>
-          </div>
-        </a>
-
-      </div>
+        </div>
+        <div class="pc-name" style="font-size:20px; margin-bottom:8px">Film <em>Poster</em></div>
+        <div class="pc-desc" style="font-size:13px; margin-bottom:16px">A cinematic poster drawing on film grain, warm tones, and the visual language of classic cinema for a modern editorial feel.</div>
+        <div class="pc-tech">
+          <span class="tech-tag">Photoshop</span>
+          <span class="tech-tag">Visual Design</span>
+          <span class="tech-tag">Art Direction</span>
+        </div>
+      </a>
     </div>
   </section>
 
-    <footer class="site-footer">
+  <footer class="site-footer">
     <div class="footer-l">&copy; 2026 Chen See Ng · 黄靖思</div>
     <ul class="footer-nav">
-      <li><a href="work.html">Work</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="work.html">Work</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="footer-r">Designed & built <span>by me</span></div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

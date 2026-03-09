@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chen See Ng — Frontend Developer & Digital Designer</title>
-  <meta name="description" content="Frontend Developer & Digital Designer based in Ireland. MSc Interactive Digital Media. Available for work in Dublin and remote.">
+  <title>Contact — Chen See Ng</title>
+  <meta name="description" content="Get in touch with Chen See Ng — available for frontend and UI roles in Dublin and remote.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Geist+Mono:wght@300;400;500&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400&family=Geist+Mono:wght@200;300;400&family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -16,36 +16,33 @@
 
   <nav class="nav">
     <div class="nav-left">
-      <a href="index.html" class="nav-logo">Chen See Ng</a>
+      <a href="index.html" class="nav-logo">Chen See Ng · 黄靖思</a>
       <div class="nav-badge"><div class="status-dot"></div>Open to Work</div>
     </div>
     <ul class="nav-links">
-        <li><a href="index.html">Home</a> </li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
-    <a href="contact.html" class="nav-cta">Hire Me ↗</a>
+    <a href="mailto:jingsi0506@gmail.com" class="nav-cta">Send Email ↗</a>
   </nav>
 
+  <!-- DARK HERO -->
   <div class="page-hero">
     <div class="page-hero-grid"></div>
-    <div class="page-hero-label">Get in Touch</div>
-    <h1 class="page-hero-h1">
-      Let's make<br>something <em>great.</em>
-    </h1>
-    <p class="page-hero-sub">
-      I'm actively looking for internship and junior frontend / UI roles
-      in Dublin or remote. If you think I'd be a good fit, I'd love to hear from you.
-    </p>
+    <div class="ph-label">Get in Touch</div>
+    <h1 class="ph-h1">Let's make<br>something <em>great.</em></h1>
+    <p class="ph-sub">I'm actively looking for internship and junior frontend / UI roles in Dublin or remote. If you think I'd be a good fit, I'd love to hear from you.</p>
   </div>
 
   <!-- CONTACT MAIN -->
-  <section class="contact-section">
-    <div class="contact-layout">
+  <section class="cream-section section-pad">
+    <div class="contact-grid">
 
+      <!-- Left: CTA + info -->
       <div class="reveal">
-        <div class="section-num">Say Hello</div>
+        <div class="s-label">Say Hello</div>
         <div class="contact-big">
           Let's<br>work<br><em>together.</em>
         </div>
@@ -53,17 +50,13 @@
           Whether you have a role in mind, a project to discuss, or just want to connect —
           my inbox is open. I reply within 24 hours.
         </p>
-        <a href="mailto:jingsi0506@gmail.com" class="btn-primary">
-          Send a Message ↗
-        </a>
-        <div class="contact-location">
-          Dundalk, Co. Louth · Ireland · Open to Dublin & Remote
-        </div>
+        <a href="mailto:jingsi0506@gmail.com" class="btn-primary">Send a Message ↗</a>
+        <div class="contact-loc">Dundalk, Co. Louth · Ireland · Open to Dublin & Remote</div>
       </div>
 
-      <div class="contact-links reveal">
+      <!-- Right: terminal + links -->
+      <div class="reveal">
 
-        <!-- Terminal window -->
         <div class="contact-terminal">
           <div class="contact-terminal-bar">
             <span class="ctb-dot ctb-red"></span>
@@ -72,102 +65,87 @@
             <span class="ctb-path">jingsi@portfolio: ~/contact</span>
           </div>
           <div class="contact-terminal-body">
-            <div class="classified-terminal-lines">
-              <div class="ctl" data-text="> establishing_connection.sh"></div>
-              <div class="ctl" data-text="  Loading communication protocols..."></div>
-              <div class="ctl" data-text="  ✓ Connection established successfully"></div>
-              <div class="ctl" data-text=""> </div>
-              <div class="ctl" data-text="> mail -to jingsi0506@gmail.com"></div>
-              <div class="ctl" data-text="> gh open github.com/jingsi-ng"></div>
-              <div class="ctl" data-text="> linkedin open jingsi-ng-0506cs0n0"></div>
-            </div>
+            <div class="ctl t-bright" data-text="> establishing_connection.sh"></div>
+            <div class="ctl" data-text="  Loading communication protocols..."></div>
+            <div class="ctl t-green" data-text="  ✓ Connection established"></div>
+            <div class="ctl" data-text=" "></div>
+            <div class="ctl t-accent" data-text="> mail -to jingsi0506@gmail.com"></div>
+            <div class="ctl t-accent" data-text="> gh open github.com/jingsi-ng"></div>
+            <div class="ctl t-accent" data-text="> linkedin open jingsi-ng-0506cs0n0"></div>
           </div>
         </div>
 
-        <div class="contact-sys-footer">
+        <div class="contact-sys">
           <span class="csf-item"><span class="csf-dot"></span>SIGNAL ACTIVE</span>
           <span class="csf-item"><span class="csf-dot"></span>READY TO RECEIVE</span>
-          <span class="csf-item"><span class="csf-dot"></span>CLEARANCE: UNRESTRICTED</span>
+          <span class="csf-item"><span class="csf-dot"></span>CLEARANCE: OPEN</span>
         </div>
 
-        <div class="contact-links-plain">
-          <a href="mailto:jingsi0506@gmail.com" class="contact-row">
-            <div>
-              <div class="cr-label">Email</div>
-              <div class="cr-val">jingsi0506@gmail.com</div>
-            </div>
-            <span class="cr-arrow">↗</span>
-          </a>
-          <a href="https://github.com/jingsi-ng" target="_blank" rel="noopener" class="contact-row">
-            <div>
-              <div class="cr-label">GitHub</div>
-              <div class="cr-val">github.com/jingsi-ng</div>
-            </div>
-            <span class="cr-arrow">↗</span>
-          </a>
-          <a href="https://linkedin.com/in/jingsi-ng-0506cs0n0" target="_blank" rel="noopener" class="contact-row">
-            <div>
-              <div class="cr-label">LinkedIn</div>
-              <div class="cr-val">linkedin.com/in/jingsi-ng-0506cs0n0</div>
-            </div>
-            <span class="cr-arrow">↗</span>
-          </a>
-          <a href="#" class="contact-row">
-            <div>
-              <div class="cr-label">Resume / CV</div>
-              <div class="cr-val">Download PDF</div>
-            </div>
-            <span class="cr-arrow">↓</span>
-          </a>
-        </div>
-
+        <a href="mailto:jingsi0506@gmail.com" class="contact-row">
+          <div>
+            <div class="cr-label">Email</div>
+            <div class="cr-val">jingsi0506@gmail.com</div>
+          </div>
+          <span class="cr-arrow">↗</span>
+        </a>
+        <a href="https://github.com/jingsi-ng" target="_blank" rel="noopener" class="contact-row">
+          <div>
+            <div class="cr-label">GitHub</div>
+            <div class="cr-val">github.com/jingsi-ng</div>
+          </div>
+          <span class="cr-arrow">↗</span>
+        </a>
+        <a href="https://linkedin.com/in/jingsi-ng-0506cs0n0" target="_blank" rel="noopener" class="contact-row">
+          <div>
+            <div class="cr-label">LinkedIn</div>
+            <div class="cr-val">linkedin.com/in/jingsi-ng-0506cs0n0</div>
+          </div>
+          <span class="cr-arrow">↗</span>
+        </a>
+        <a href="#" class="contact-row">
+          <div>
+            <div class="cr-label">Resume / CV</div>
+            <div class="cr-val">Download PDF</div>
+          </div>
+          <span class="cr-arrow">↓</span>
+        </a>
       </div>
-
     </div>
 
-    <!-- Availability cards -->
-    <div class="contact-availability reveal">
-      <div class="section-num">What I'm Looking For</div>
+    <!-- Availability -->
+    <div class="reveal" style="margin-top:100px; padding-top:80px; border-top:1px solid rgba(14,12,10,0.08)">
+      <div class="s-label" style="margin-bottom:48px">What I'm Looking For</div>
       <div class="avail-grid">
         <div class="avail-card">
           <div class="avail-icon">💼</div>
           <div class="avail-title">Internship</div>
-          <div class="avail-desc">
-            Open to structured internship programmes where I can contribute meaningfully
-            and learn from experienced developers and designers.
-          </div>
+          <div class="avail-desc">Open to structured internship programmes where I can contribute meaningfully and learn from experienced developers and designers.</div>
         </div>
         <div class="avail-card">
           <div class="avail-icon">⚡</div>
           <div class="avail-title">Junior Role</div>
-          <div class="avail-desc">
-            Ready for a junior frontend or UI engineering position. I'm a fast learner
-            who ships clean code and brings design sensibility to every project.
-          </div>
+          <div class="avail-desc">Ready for a junior frontend or UI engineering position. I'm a fast learner who ships clean code and brings design sensibility to every project.</div>
         </div>
         <div class="avail-card">
           <div class="avail-icon">🌍</div>
           <div class="avail-title">Location</div>
-          <div class="avail-desc">
-            Based in Dundalk, open to commuting to Dublin or working fully remote.
-            Flexible on hybrid arrangements.
-          </div>
+          <div class="avail-desc">Based in Dundalk, open to commuting to Dublin or working fully remote. Flexible on hybrid arrangements.</div>
         </div>
       </div>
     </div>
   </section>
 
-
-    <footer class="site-footer">
+  <footer class="site-footer">
     <div class="footer-l">&copy; 2026 Chen See Ng · 黄靖思</div>
     <ul class="footer-nav">
-      <li><a href="work.html">Work</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="work.html">Work</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="footer-r">Designed & built <span>by me</span></div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

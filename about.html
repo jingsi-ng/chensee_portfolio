@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chen See Ng — Frontend Developer & Digital Designer</title>
-  <meta name="description" content="Frontend Developer & Digital Designer based in Ireland. MSc Interactive Digital Media. Available for work in Dublin and remote.">
+  <title>About — Chen See Ng</title>
+  <meta name="description" content="About Chen See Ng — Frontend Developer & Digital Designer, MSc Interactive Digital Media, Griffith College Dublin.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Geist+Mono:wght@300;400;500&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400&family=Geist+Mono:wght@200;300;400&family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -16,38 +16,34 @@
 
   <nav class="nav">
     <div class="nav-left">
-      <a href="index.html" class="nav-logo">Chen See Ng</a>
+      <a href="index.html" class="nav-logo">Chen See Ng · 黄靖思</a>
       <div class="nav-badge"><div class="status-dot"></div>Open to Work</div>
     </div>
     <ul class="nav-links">
-        <li><a href="index.html">Home</a> </li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
     <a href="contact.html" class="nav-cta">Hire Me ↗</a>
   </nav>
 
+  <!-- DARK HERO -->
   <div class="page-hero">
     <div class="page-hero-grid"></div>
-    <div class="page-hero-label">About Me</div>
-    <h1 class="page-hero-h1">
-      Developer with a<br><em>designer's eyes</em>
-    </h1>
-    <p class="page-hero-sub">
-      I care about the details — spacing, type, motion, and the small interactions
-      that make an interface feel alive.
-    </p>
+    <div class="ph-label">About Me</div>
+    <h1 class="ph-h1">Developer with a<br><em>designer's eyes</em></h1>
+    <p class="ph-sub">I care about the details — spacing, type, motion, and the small interactions that make an interface feel alive.</p>
   </div>
 
   <!-- ABOUT BODY -->
-  <section class="section-wrap">
+  <section class="cream-section section-pad">
     <div class="about-grid">
 
       <!-- Left col -->
       <div>
         <div class="reveal">
-          <div class="section-num">Who I Am</div>
+          <div class="s-label">Who I Am</div>
           <div class="about-body">
             <p>
               I'm <strong>Chen See Ng (黄靖思)</strong>, a frontend developer and digital designer
@@ -74,27 +70,21 @@
           </div>
         </div>
 
-        <div class="about-edu reveal">
-          <div class="edu-label">Education</div>
+        <div class="edu-block reveal">
+          <div class="edu-tag">Education</div>
           <div class="edu-name">MSc Interactive Digital Media</div>
-          <div class="edu-sub">
-            Griffith College Dublin · 2025 – 2026<br>
-            Stage 2 in progress
-          </div>
+          <div class="edu-sub">Griffith College Dublin · 2025 – 2026<br>Stage 2 in progress</div>
         </div>
 
-        <div class="about-edu reveal">
-          <div class="edu-label">Education</div>
+        <div class="edu-block reveal">
+          <div class="edu-tag">Education</div>
           <div class="edu-name">BA Digital Humanities</div>
-          <div class="edu-sub">
-            Dundalk Institute of Technology · 2015 – 2019<br>
-            Second Class Honours, Grade 1
-          </div>
+          <div class="edu-sub">Dundalk Institute of Technology · 2015 – 2019<br>Second Class Honours, Grade 1</div>
         </div>
 
-        <div class="about-edu about-edu-mt reveal">
-          <div class="edu-label">Work Experience</div>
-          <div class="edu-name-sm">Secondary School Teacher</div>
+        <div class="edu-block reveal">
+          <div class="edu-tag">Work Experience</div>
+          <div class="edu-name" style="font-size:17px">Secondary School Teacher</div>
           <div class="edu-sub">
             Foon Yew High School · 2020 – 2024<br>
             Designed digital learning materials and interactive activities.
@@ -102,27 +92,26 @@
           </div>
         </div>
 
-        <div class="about-edu reveal">
-          <div class="edu-label">Work Experience</div>
-          <div class="edu-name-sm">Content & Translation Assistant</div>
+        <div class="edu-block reveal">
+          <div class="edu-tag">Work Experience</div>
+          <div class="edu-name" style="font-size:17px">Content & Translation Assistant</div>
           <div class="edu-sub">
             Small Studio · 2023 – 2024 · Part-time<br>
-            Edited and proofread content, handled translation and content updates
-            under tight deadlines.
+            Edited and proofread content, handled translation and content updates under tight deadlines.
           </div>
         </div>
 
-        <div class="about-edu reveal">
-          <div class="edu-label">Languages</div>
-          <div class="edu-name-lang">English · Chinese · Bahasa Melayu</div>
+        <div class="edu-block reveal">
+          <div class="edu-tag">Languages</div>
+          <div class="edu-name" style="font-size:17px">English · Chinese · Bahasa Melayu</div>
           <div class="edu-sub">All three at native or near-native level</div>
         </div>
       </div>
 
       <!-- Right col — Skills -->
-      <div class="skills-col">
+      <div>
         <div class="reveal">
-          <div class="section-num">Skills</div>
+          <div class="s-label">Skills</div>
         </div>
 
         <div class="skill-group reveal">
@@ -164,7 +153,7 @@
         <div class="skill-group reveal">
           <div class="skill-cat">Concepts</div>
           <div class="skill-row">
-            <span class="skill-chip">UI/UX Design</span>
+            <span class="skill-chip">UI / UX Design</span>
             <span class="skill-chip">Visual Communication</span>
             <span class="skill-chip">Typography</span>
             <span class="skill-chip">Colour Theory</span>
@@ -176,10 +165,10 @@
   </section>
 
   <!-- PROCESS -->
-  <section class="section-wrap section-bordered">
-    <div class="section-header reveal">
-      <div class="section-num">How I Work</div>
-      <h2 class="section-h2">My <em>process</em></h2>
+  <section class="cream-section-alt section-pad">
+    <div class="reveal" style="margin-bottom:52px">
+      <div class="s-label">How I Work</div>
+      <h2 class="s-h2">My <em>process</em></h2>
     </div>
     <div class="process-grid">
       <div class="process-card reveal">
@@ -205,16 +194,17 @@
     </div>
   </section>
 
-    <footer class="site-footer">
+  <footer class="site-footer">
     <div class="footer-l">&copy; 2026 Chen See Ng · 黄靖思</div>
     <ul class="footer-nav">
-      <li><a href="work.html">Work</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="work.html">Work</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="footer-r">Designed & built <span>by me</span></div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
