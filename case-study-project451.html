@@ -27,7 +27,6 @@
     <a href="contact.html" class="nav-cta">Hire Me ↗</a>
   </nav>
 
-  <!-- Dark hero for this project -->
   <div class="cs-hero p451">
     <div class="cs-hero-grid"></div>
     <div class="cs-type">001 · Speculative Fiction Web Experience</div>
@@ -62,16 +61,10 @@
       <h2 class="cs-h3">A dystopian digital archive</h2>
       <div class="cs-section-body">
         <p>
-          <strong>Project 451 is a speculative fiction web experience</strong> inspired by
-          Fahrenheit 451 — Ray Bradbury's novel about a future where books are banned and
-          "firemen" burn them. The project transforms the novel's themes of censorship,
-          memory, and resistance into an interactive digital archive.
+          <strong>Project 451 is a web experience</strong> inspired by Fahrenheit 451, a classic novel by Ray Bradbury about a future where books are banned and destroyed. This project translates the novel's themes of censorship and memory preservation into an interactive digital archive.
         </p>
         <p>
-          The concept: what if the book-preservers in the novel had a secret digital archive?
-          Users enter a classified, terminal-style interface and navigate through censored
-          documents, hidden records, and narrative-driven content — as if they're accessing
-          something they're not supposed to see.
+          The core concept asks a simple question: what if the book preservers in the story built a secret digital archive? Users enter a classified computer interface to navigate through hidden records and forbidden texts. The goal was to make visitors feel like they are accessing a highly restricted system.
         </p>
       </div>
 
@@ -101,32 +94,19 @@
     <!-- Design decisions -->
     <div class="cs-section reveal">
       <div class="cs-section-label">Design Decisions</div>
-      <h2 class="cs-h3">When the interface <em>is</em> the story</h2>
+      <h2 class="cs-h3">Creating an immersive interface</h2>
       <div class="cs-section-body">
         <p>
-          The guiding principle was simple: <strong>every UI element had to earn its place
-          within the fiction.</strong> This isn't a website about Fahrenheit 451 — it's a
-          website that exists inside the world of Fahrenheit 451. That distinction shaped
-          every decision.
+          My main goal was to ensure every UI element fit into the fictional world. I did not want to just build a standard website about Fahrenheit 451. I wanted to design a website that looks like it exists inside that dystopian universe.
         </p>
         <p>
-          The black-dominant palette and degraded monospace typography weren't aesthetic
-          choices — they were worldbuilding. They signal a system that operates in the
-          margins, built by people who can't afford to be visible. The opening "WARNING:
-          RESTRICTED AREA" modal doesn't just set the tone; it asks the user to commit
-          to the premise before they can enter.
+          I chose a dark color palette and monospace typography to build the atmosphere. These visual choices represent an underground system built by people hiding from the authorities. The opening "WARNING: RESTRICTED AREA" modal immediately sets the tone. It asks the user to make an active choice before they can even view the archive.
         </p>
         <p>
-          Status indicators borrowed from real system UIs — <em>SYSTEM ONLINE</em>,
-          <em>THREAT LEVEL: ELEVATED</em>, <em>ARCHIVE STATUS: SECURE</em> — were
-          deliberately designed to feel familiar and institutional, which makes them
-          feel more unsettling in this context. <strong>The uncanny comes from recognising
-          something real in a fictional frame.</strong>
+          I also borrowed status indicators from real computer systems, such as <em>SYSTEM ONLINE</em> or <em>ARCHIVE STATUS: SECURE</em>. These familiar institutional elements make the fictional experience feel much more realistic and engaging.
         </p>
         <p>
-          CSS animations were restrained on purpose. Loading states, blinking cursors,
-          and the `>` prompt prefix do more atmospheric work than a dozen scroll effects
-          ever could.
+          I kept CSS animations simple and intentional. Elements like a blinking cursor and a sequential loading text create a stronger atmosphere than complex scrolling effects.
         </p>
       </div>
     </div>
@@ -134,33 +114,19 @@
     <!-- Technical -->
     <div class="cs-section reveal">
       <div class="cs-section-label">Technical Approach</div>
-      <h2 class="cs-h3">Astro + Supabase: a real stack for a fictional world</h2>
+      <h2 class="cs-h3">Building the frontend and backend</h2>
       <div class="cs-section-body">
-        <p>
-          The brief called for a functional web experience — but I wanted to go further
-          and build something that behaved like a real application, not just a static
-          page dressed up to look dynamic.
+         <p>
+          For this project, I wanted to push myself to build a fully functional web application instead of just a static prototype. 
         </p>
         <p>
-          <strong>Astro</strong> was the right framework for this: its component-based
-          architecture let me build reusable "archive entry" and "classified document"
-          components, while its SSG model kept the build fast and deployable to Netlify
-          without a server. Critically, Astro's islands architecture meant interactive
-          components only hydrated where needed — no unnecessary JavaScript overhead.
+          I chose <strong>Astro</strong> as my main framework. Its component-based architecture allowed me to build reusable UI parts easily. At the same time, its static site generation (SSG) features kept the website fast and simple to deploy. Astro's island architecture also ensured that JavaScript was only loaded when absolutely necessary.
         </p>
         <p>
-          <strong>Supabase</strong> provided the PostgreSQL backend. Archive entries —
-          the "preserved texts" — are stored in a real database and queried on page load,
-          which means the archive genuinely grows when users register and submit content.
-          This was my first time connecting a frontend project to a live backend service,
-          and it fundamentally changed how I think about the data layer.
+          For the backend, I integrated <strong>Supabase</strong>. The preserved texts are stored in a live PostgreSQL database and fetched when the page loads. This was my first time connecting a frontend project to a live database, and it helped me understand how data flows in a real application.
         </p>
         <p>
-          <strong>User authentication</strong> was implemented with Supabase Auth — users
-          register a "keycard," log in, and gain access to the restricted archive. Session
-          state persists across page navigation, with JavaScript managing route-level access
-          control on the client side. The `LEVEL 1 CLEARANCE` login screen isn't decorative;
-          it's a real auth gate.
+          I also implemented user authentication using Supabase Auth. Visitors must register a virtual keycard and log in to access the restricted archive. I managed the session state using vanilla JavaScript to ensure the restricted routes remain secure.
         </p>
       </div>
     </div>
@@ -168,28 +134,16 @@
     <!-- Challenges -->
     <div class="cs-section reveal">
       <div class="cs-section-label">Challenges</div>
-      <h2 class="cs-h3">Where it got difficult</h2>
+      <h2 class="cs-h3">Overcoming technical problems</h2>
       <div class="cs-section-body">
         <p>
-          The hardest problem was <strong>synchronising Supabase's async data fetching
-          with Astro's SSG pipeline.</strong> Astro pre-renders pages at build time —
-          but the archive content is dynamic and user-generated, so it can't be known
-          at build time. The solution was to use Astro's server-side rendering mode
-          selectively for dynamic routes while keeping static generation for everything
-          else, which required careful routing decisions early in the project.
+          The biggest challenge was connecting Supabase's dynamic database with Astro's static site generation. Since the archive content is user-generated, it cannot be pre-rendered at build time. I solved this by selectively using Astro's server-side rendering mode for the dynamic routes while keeping the rest of the site static.
         </p>
         <p>
-          Managing <strong>client-side session state without a framework like React</strong>
-          was a deliberate constraint I set for myself. Every auth check, redirect, and
-          conditional render was handled in vanilla JavaScript. It was tedious at times,
-          but it forced me to understand what frameworks actually abstract away — and when
-          that abstraction is genuinely worth it.
+          I also chose to manage the client-side session state using <strong>vanilla JavaScript</strong> instead of a framework like React. Writing the authentication checks and redirects from scratch was difficult. However, it forced me to deeply understand how web applications handle user sessions behind the scenes.
         </p>
         <p>
-          Getting the <strong>classified modal to feel right</strong> took longer than
-          expected. The tension between theatricality and usability is real — too much
-          animation and it becomes annoying; too little and the fiction falls flat.
-          I settled on a single typewriter reveal with no looping effects.
+          Finally, getting the warning modal to feel right took time. I had to balance storytelling with usability. If the animations were too long, it would annoy the user. I eventually settled on a simple typewriter reveal effect to keep it engaging but fast.
         </p>
       </div>
     </div>
@@ -197,44 +151,34 @@
     <!-- Reflection -->
     <div class="cs-section reveal">
       <div class="cs-section-label">Reflection</div>
-      <h2 class="cs-h3">What I took away</h2>
+      <h2 class="cs-h3">What I learned</h2>
       <div class="cs-learnings">
         <div class="cs-learning-item">
-          <div class="cs-learning-num">01 · Learned</div>
+           <div class="cs-learning-num">01 / Learned</div>
           <div class="cs-learning-text">
-            <strong>Backend integration changes your design thinking.</strong> Once the
-            archive became a live database rather than static HTML, I had to consider
-            empty states, loading states, error states, and edge cases I'd never thought
-            about when building purely static work. UX and engineering are not separate
-            disciplines.
+            <strong>Connecting to a backend changes how you design.</strong> Once the archive became a live database rather than static HTML, I had to think about empty states, loading screens, and errors. It taught me that UX design and software engineering are deeply connected.
           </div>
         </div>
         <div class="cs-learning-item">
-          <div class="cs-learning-num">02 · Would Do Differently</div>
+          <div class="cs-learning-num">02 / Would Do Differently</div>
           <div class="cs-learning-text">
-            <strong>I'd define the data schema earlier.</strong> I refactored the
-            Supabase table structure mid-project when I realised my original schema
-            didn't support the filtering and classification system I wanted. Schema
-            design is a design problem, not just a backend one.
+            <strong>Planning the database structure is crucial.</strong> I had to rebuild my Supabase tables halfway through the project because my initial plan did not support data filtering. Next time, I will spend more time designing the data structure before writing any code.
           </div>
         </div>
         <div class="cs-learning-item">
-          <div class="cs-learning-num">03 · Proud Of</div>
+          <div class="cs-learning-num">03 / Proud Of</div>
           <div class="cs-learning-text">
-            <strong>The narrative coherence.</strong> Every screen — from the
-            onboarding modal to the empty-archive state ("The Vault is Empty. No texts
-            have been preserved yet.") — speaks the same fictional language.
-            The copy, the UI, the data model, and the visual design all tell the same story.
-            That kind of consistency across layers is what I care most about.
+            <strong>Maintaining a consistent story.</strong> I am proud that every part of the website fits the same dystopian theme. From the login screen to the empty search results, the visual design and the code work together to tell a complete story.
           </div>
         </div>
       </div>
     </div>
+  </div>
 
     <!-- Links -->
     <div class="cs-section reveal cs-section-actions">
       <a href="https://memoryvault-451.netlify.app" target="_blank" class="btn-primary">View Live Site ↗</a>
-      <a href="https://github.com/jingsi-ng" target="_blank" class="btn-ghost">GitHub →</a>
+      <a href="https://github.com/jingsi-ng/memory-vault.git" target="_blank" class="btn-ghost">GitHub →</a>
     </div>
 
   </div>
