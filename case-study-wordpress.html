@@ -46,70 +46,111 @@
       </div>
       <div class="cs-meta-item">
         <div class="cs-meta-label">Live</div>
-        <div class="cs-meta-val"><a href="#" class="cs-live-link">View Project ↗</a></div>
+        <div class="cs-meta-val"><a href="https://lucky-achiever.localsite.io/" class="cs-live-link">View Project ↗</a></div>
       </div>
     </div>
   </div>
 
-  <div class="cs-body">
+ <div class="cs-body">
 
+    <!-- Overview -->
     <div class="cs-section reveal">
       <div class="cs-section-label">Overview</div>
-      <h2 class="cs-h3">What is this project?</h2>
+      <h2 class="cs-h3">A personal portfolio disguised as a classified archive</h2>
       <div class="cs-section-body">
-        <p><strong>Describe the WordPress portfolio CMS here.</strong> What was the brief? What type of portfolio was it for?</p>
-        <p>What made this more than just a default WordPress theme — what customisations did you make?</p>
+        <p>
+          <strong>The Curated Archive is a personal portfolio website</strong> built with WordPress. The goal of this Web Authoring assignment was to create a functional Content Management System (CMS) to showcase my projects. 
+        </p>
+        <p>
+          Instead of building a standard design portfolio, I wanted to create a cohesive visual narrative. Inspired by the dystopian aesthetic of my previous Fahrenheit 451 project, I positioned myself as a "digital archivist". Every project is presented as a classified document or a preserved file, transforming a simple portfolio into a highly immersive user experience.
+        </p>
+      </div>
+
+      <!-- Theme highlight block (Matching your aesthetic) -->
+      <div class="terminal-block" style="background-color: #111111; color: #d4d0c8; border-left: 4px solid #b8860b;">
+        <span style="color: #b8860b; font-weight: bold;">// THEME CONFIGURATION / ARCHIVE</span><br>
+        <span class="t-green">▸</span> Base Theme : <span style="color: #d4d0c8;">Twenty Twenty-Five (Highly Customised)</span><br>
+        <span class="t-green">▸</span> Palette : <span style="color: #d4d0c8;">Forest Black / Cream / Antique Gold</span><br>
+        <span class="t-green">▸</span> Texture : <span class="t-green">SVG feTurbulence film grain</span><br>
+        <span style="color: #888888;">// Status: Classified data retrieved successfully.</span>
       </div>
     </div>
 
+    <!-- Screenshots -->
     <div class="cs-section reveal">
       <div class="cs-section-label">Screens & Interface</div>
       <div class="cs-two-col">
-        <div class="cs-img-placeholder">[ Homepage / Portfolio Grid ]</div>
-        <div class="cs-img-placeholder">[ Admin / CMS View ]</div>
+        <div class="cs-img-placeholder tall">[ Homepage / Classified Card Design ]</div>
+        <div class="cs-img-placeholder tall">[ Archive / Project Grid ]</div>
       </div>
-      <div class="cs-img-placeholder cs-img-wide">[ Full Width View ]</div>
+      <div class="cs-img-placeholder cs-img-wide">
+        [ Contact Page / Terminal UI ]
+      </div>
     </div>
 
+    <!-- Design decisions -->
     <div class="cs-section reveal">
       <div class="cs-section-label">Design Decisions</div>
-      <h2 class="cs-h3">Theme & visual approach</h2>
+      <h2 class="cs-h3">Vintage aesthetics and tactile textures</h2>
       <div class="cs-section-body">
-        <p><strong>How did you customise the theme?</strong> Did you write custom CSS, modify templates, or build from scratch?</p>
-        <p>What visual decisions did you make — layout, typography, colours?</p>
+        <p>
+          To bring the archival identity to life, I replaced the pure black backgrounds with a deep forest black to make the site feel warmer and more mysterious. I used cream paper tones for the project cards and applied antique gold accents to mimic vintage stamps and official seals.
+        </p>
+        <p>
+          Typography was crucial for this concept. I paired Playfair Display for elegant headings with Special Elite for the "classified card" element to create a realistic typewriter aesthetic. I also used Courier Prime for code-like terminal elements.
+        </p>
+        <p>
+          To make the archival look authentic, I implemented a custom SVG-based noise texture using the CSS `feTurbulence` filter. This generated a subtle film-grain effect across the entire website without relying on heavy image files, which kept the loading times fast.
+        </p>
       </div>
     </div>
 
+    <!-- Technical -->
     <div class="cs-section reveal">
       <div class="cs-section-label">Technical Approach</div>
-      <h2 class="cs-h3">WordPress under the hood</h2>
+      <h2 class="cs-h3">Balancing native blocks and custom code</h2>
       <div class="cs-section-body">
-        <p><strong>What did you learn about WordPress as a platform?</strong> Custom post types, plugins, template hierarchy, the Loop?</p>
-        <p>What was the trickiest part of working with WordPress as a framework?</p>
+        <p>
+          I built the site using the native WordPress Block Editor and Full Site Editing (FSE) capabilities. Initially, I forced myself to use only standard blocks because I wanted to master the native CMS tools. However, I soon realized that complex layouts, like the intricately layered "classified card" on the homepage, required exact precision. I strategically integrated Custom HTML blocks to achieve these specific designs.
+        </p>
+        <p>
+          I wrote over 1,400 lines of Additional CSS to customize the Twenty Twenty-Five theme. A significant challenge was battling CSS specificity. The default theme styles were very strict, so I had to use highly targeted CSS declarations to ensure my typography choices and custom hover animations applied correctly across all pages.
+        </p>
+        <p>
+          I also had to modify the global layout constraints. The default content width felt too narrow for a desktop portfolio, so I adjusted the Global Styles layout settings to a maximum width of 1400px, allowing the design to breathe and look professional on large monitors.
+        </p>
       </div>
     </div>
 
+    <!-- Reflection -->
     <div class="cs-section reveal">
       <div class="cs-section-label">Reflection</div>
-      <h2 class="cs-h3">What I took away</h2>
+      <h2 class="cs-h3">What I learned</h2>
       <div class="cs-learnings">
         <div class="cs-learning-item">
-          <div class="cs-learning-num">01 · Learned</div>
-          <div class="cs-learning-text"><strong>Your key learning from WordPress.</strong> CMS architecture, PHP templating, or something else?</div>
+          <div class="cs-learning-num">01 / Learned</div>
+          <div class="cs-learning-text">
+            <strong>Knowing when to break the rules.</strong> I learned that mastering a CMS is not just about understanding its built-in features. It is equally important to know exactly when the native tools are insufficient and when to step outside those boundaries with custom HTML and CSS.
+          </div>
         </div>
         <div class="cs-learning-item">
-          <div class="cs-learning-num">02 · Would Do Differently</div>
-          <div class="cs-learning-text"><strong>Knowing what you know now,</strong> what would you approach differently?</div>
+          <div class="cs-learning-num">02 / Would Do Differently</div>
+          <div class="cs-learning-text">
+            <strong>Switch to Custom HTML earlier.</strong> I spent hours trying to force native WordPress blocks to create complex, overlapping layouts. Next time, I will accept the limitations of the Block Editor much earlier and use custom code for highly bespoke UI components to save time.
+          </div>
         </div>
         <div class="cs-learning-item">
-          <div class="cs-learning-num">03 · Proud Of</div>
-          <div class="cs-learning-text"><strong>What's the piece of this project</strong> you're most proud of?</div>
+          <div class="cs-learning-num">03 / Proud Of</div>
+          <div class="cs-learning-text">
+            <strong>The cohesive storytelling.</strong> I am proud that I successfully transformed a standard WordPress theme into a unique storytelling device. From the SVG film grain to the typewriter fonts and the student ID file numbers, every detail supports the illusion of a classified digital archive.
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- Action Buttons -->
     <div class="cs-section reveal cs-section-actions">
-      <a href="#" class="btn-primary">View Live Site ↗</a>
+      <a href="https://lucky-achiever.localsite.io/" target="_blank" class="btn-primary">View Live Site ↗</a>
     </div>
 
   </div>

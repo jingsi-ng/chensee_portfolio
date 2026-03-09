@@ -42,75 +42,103 @@
       </div>
       <div class="cs-meta-item">
         <div class="cs-meta-label">Stack</div>
-        <div class="cs-meta-val">HTML · CSS · JavaScript</div>
+        <div class="cs-meta-val">HTML · CSS</div>
       </div>
       <div class="cs-meta-item">
         <div class="cs-meta-label">Live</div>
-        <div class="cs-meta-val"><a href="#" class="cs-live-link">View Project ↗</a></div>
+        <div class="cs-meta-val"><a href="https://jingsi-profile.netlify.app/" class="cs-live-link">View Project ↗</a></div>
       </div>
     </div>
   </div>
 
-  <div class="cs-body">
+   <div class="cs-body">
 
+    <!-- Overview -->
     <div class="cs-section reveal">
       <div class="cs-section-label">Overview</div>
-      <h2 class="cs-h3">What is this project?</h2>
+      <h2 class="cs-h3">A digital resume with personality</h2>
       <div class="cs-section-body">
-        <p><strong>Describe the personal profile site here.</strong> What was it meant to communicate? Who was the intended audience?</p>
-        <p>What makes this a reflection of you personally — not just a generic profile page?</p>
+        <p>
+          The personal profile site serves as my digital resume and the central hub for my professional work. My main goal was to communicate my unique career journey. I wanted to show hiring managers and design peers how my background in education and digital humanities makes me a better frontend developer.
+        </p>
+        <p>
+          Instead of using a generic template, I designed this site from scratch to reflect my own organized mindset. It is not just a list of my skills. It is a practical demonstration of my ability to structure information logically and present it beautifully.
+        </p>
       </div>
     </div>
 
+    <!-- Screenshots -->
     <div class="cs-section reveal">
       <div class="cs-section-label">Screens & Interface</div>
       <div class="cs-two-col">
-        <div class="cs-img-placeholder">[ Profile / Hero Section ]</div>
-        <div class="cs-img-placeholder">[ About / Content Section ]</div>
+        <div class="cs-img-placeholder tall">[ Profile / Hero Section ]</div>
+        <div class="cs-img-placeholder tall">[ About / Content Section ]</div>
       </div>
-      <div class="cs-img-placeholder cs-img-wide">[ Full Page View ]</div>
+      <div class="cs-img-placeholder cs-img-wide">
+        [ Full Page View ]
+      </div>
     </div>
 
+    <!-- Design decisions -->
     <div class="cs-section reveal">
       <div class="cs-section-label">Design Decisions</div>
       <h2 class="cs-h3">Designing for yourself</h2>
       <div class="cs-section-body">
-        <p><strong>Designing for yourself is surprisingly hard.</strong> What visual direction did you choose and why does it represent you?</p>
-        <p>How did you balance personality with professionalism in the design?</p>
+        <p>
+          Designing for yourself is surprisingly hard because there are no external constraints or client briefs to guide you. I ultimately chose a dark visual direction with subtle warm accents. This creates a calm, focused, and professional atmosphere that matches my working style.
+        </p>
+        <p>
+          To balance personality with professionalism, I avoided overly flashy elements. I focused heavily on high-quality typography and clear information hierarchy. I also used data visualization, such as custom radar charts, to display my skill sets creatively rather than relying on standard bullet points.
+        </p>
       </div>
     </div>
 
+    <!-- Technical -->
     <div class="cs-section reveal">
       <div class="cs-section-label">Technical Approach</div>
       <h2 class="cs-h3">Under the hood</h2>
       <div class="cs-section-body">
-        <p><strong>What's interesting technically about this project?</strong> Animations, layout, JavaScript interactions?</p>
-        <p>Anything you tried here that you hadn't done in previous projects?</p>
+        <p>
+          I built this project without any heavy frameworks to ensure optimal loading speeds. The most interesting technical challenge was implementing the smooth scroll-reveal animations across the different sections.
+        </p>
+        <p>
+          Instead of using a third-party animation library, I decided to use the native Intersection Observer API in vanilla JavaScript. This was my first time relying entirely on this API. It allowed me to trigger CSS animations exactly when elements enter the viewport, resulting in a highly performant and elegant browsing experience.
+        </p>
+        <p>
+          I also pushed my CSS Grid skills further by creating a complex, responsive layout for the resume section that adapts perfectly to mobile screens without breaking the reading flow.
+        </p>
       </div>
     </div>
 
+    <!-- Reflection -->
     <div class="cs-section reveal">
       <div class="cs-section-label">Reflection</div>
       <h2 class="cs-h3">What I took away</h2>
       <div class="cs-learnings">
         <div class="cs-learning-item">
-          <div class="cs-learning-num">01 · Learned</div>
-          <div class="cs-learning-text"><strong>Your main learning from this project.</strong> Technical, design, or process?</div>
+          <div class="cs-learning-num">01 / Learned</div>
+          <div class="cs-learning-text">
+            <strong>Content strategy is crucial.</strong> I learned that writing clear and concise copy about my own background takes just as much effort as building the layouts. Good design cannot fix bad content.
+          </div>
         </div>
         <div class="cs-learning-item">
-          <div class="cs-learning-num">02 · Would Do Differently</div>
-          <div class="cs-learning-text"><strong>If you rebuilt this today,</strong> what would look or work differently?</div>
+          <div class="cs-learning-num">02 / Would Do Differently</div>
+          <div class="cs-learning-text">
+            <strong>Plan the CSS architecture earlier.</strong> I ended up rewriting several CSS classes halfway through the project because I did not plan my global variables properly at the start. Next time, I will establish a strict design token system from day one.
+          </div>
         </div>
         <div class="cs-learning-item">
-          <div class="cs-learning-num">03 · Proud Of</div>
-          <div class="cs-learning-text"><strong>What's the standout moment of this project</strong> — a detail, a decision, a result?</div>
+          <div class="cs-learning-num">03 / Proud Of</div>
+          <div class="cs-learning-text">
+            <strong>The custom skill visualizations.</strong> I am very proud of the interactive charts used to display my skills. It breaks away from standard resume formats and perfectly bridges my design thinking with my technical execution.
+          </div>
         </div>
       </div>
     </div>
 
     <div class="cs-section reveal cs-section-actions">
-      <a href="#" class="btn-primary">View Live Site ↗</a>
-      <a href="#" class="btn-ghost">View on GitHub →</a>
+      <a href="https://jingsi-profile.netlify.app/" class="btn-primary">View Live Site ↗</a>
+      <a href="https://github.com/jingsi-ng/profile-website.git" class="btn-ghost">View on GitHub →</a>
     </div>
 
   </div>

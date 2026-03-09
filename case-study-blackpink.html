@@ -42,11 +42,11 @@
       </div>
       <div class="cs-meta-item">
         <div class="cs-meta-label">Stack</div>
-        <div class="cs-meta-val">HTML · CSS · JavaScript</div>
+        <div class="cs-meta-val">Astro · CSS · JavaScript</div>
       </div>
       <div class="cs-meta-item">
         <div class="cs-meta-label">Live</div>
-        <div class="cs-meta-val"><a href="#" class="cs-live-link">View Project ↗</a></div>
+        <div class="cs-meta-val"><a href="https://blackpink-website.netlify.app" class="cs-live-link">View Project ↗</a></div>
       </div>
     </div>
   </div>
@@ -55,10 +55,14 @@
 
     <div class="cs-section reveal">
       <div class="cs-section-label">Overview</div>
-      <h2 class="cs-h3">What is this project?</h2>
+      <h2 class="cs-h3">A digital experiences to global pop icons</h2>
       <div class="cs-section-body">
-        <p><strong>Describe the Blackpink fansite here.</strong> What was the brief? What was the goal of the site?</p>
-        <p>Talk about the audience, the tone you were going for, and what makes this more than just a basic fan page.</p>
+         <p>
+          <strong>The Blackpink Fan Website is a multi-page editorial project</strong> dedicated to the world-famous K-pop group. It features dedicated sections for their biography, latest news, world tour schedules, and a curated music playlist. 
+        </p>
+        <p>
+          The main goal of this project was to build a highly visual and engaging platform. I wanted to organize a large amount of media content into a clean layout that fans would find easy to navigate. This project served as a great opportunity to strengthen my core frontend development skills without relying on heavy frameworks.
+        </p>
       </div>
     </div>
 
@@ -73,44 +77,77 @@
 
     <div class="cs-section reveal">
       <div class="cs-section-label">Design Decisions</div>
-      <h2 class="cs-h3">Visual identity & choices</h2>
+      <h2 class="cs-h3">Balancing bold visuals with clear navigation</h2>
       <div class="cs-section-body">
-        <p><strong>What was your design direction?</strong> Talk about the colour palette, typography, layout, and the visual feel you were aiming for.</p>
-        <p>How did you translate the Blackpink brand / aesthetic into your own web design language?</p>
+        <p>
+          Music and fan websites often suffer from visual clutter. To prevent this, I established a strict design system based on the group's iconic "Pink and Black" color scheme. I used deep black backgrounds to make the high-quality photographs stand out, while using bright pink exclusively for buttons and important links to guide the user's attention.
+        </p>
+        <p>
+          Since a large portion of K-pop fans consume content on their smartphones, a <strong>mobile-first design approach</strong> was essential. I designed the typography and image grids to adapt smoothly to smaller screens. The navigation menu also transforms into a space-saving hamburger menu on mobile devices to ensure a seamless browsing experience.
+        </p>
       </div>
     </div>
 
+    <!-- Technical -->
     <div class="cs-section reveal">
       <div class="cs-section-label">Technical Approach</div>
-      <h2 class="cs-h3">Under the hood</h2>
+      <h2 class="cs-h3">Mastering the fundamentals</h2>
       <div class="cs-section-body">
-        <p><strong>What were the interesting technical challenges?</strong> Animations, responsive layout, interactive elements?</p>
-        <p>Any specific CSS or JS technique you're particularly proud of implementing here?</p>
+        <p>
+          While modern frameworks like React are powerful, I deliberately chose to build this website using only <strong>Astro, CSS3, and Vanilla JavaScript</strong>. As a junior developer, I believe it is crucial to have a deep understanding of the core web technologies before moving on to abstractions.
+        </p>
+        <p>
+          I utilized CSS Flexbox and CSS Grid extensively to manage the complex layouts, especially for the statistics section and the image galleries. This ensured that the layout remained stable and responsive across all device sizes.
+        </p>
+        <p>
+          For interactivity, I wrote custom vanilla JavaScript to handle the mobile navigation toggle, smooth scrolling, and dynamic content sliders. Writing these scripts from scratch improved my logical problem-solving skills significantly.
+        </p>
       </div>
     </div>
 
+    <!-- Challenges -->
+    <div class="cs-section reveal">
+      <div class="cs-section-label">Challenges</div>
+      <h2 class="cs-h3">Handling media and maintainability</h2>
+      <div class="cs-section-body">
+        <p>
+          One of the main challenges was dealing with media-heavy content. High-resolution images can easily slow down a website. I had to optimize the images carefully and structure the HTML to ensure the pages loaded quickly without sacrificing visual quality.
+        </p>
+        <p>
+          Another challenge was maintaining the CSS code across five different pages. Since I was not using a component-based framework, keeping the styles consistent for buttons, headers, and footers required strict naming conventions. I used a modular approach to write my CSS, which kept the stylesheets organized and easy to update.
+        </p>
+      </div>
+    </div>
+
+    <!-- Reflection -->
     <div class="cs-section reveal">
       <div class="cs-section-label">Reflection</div>
-      <h2 class="cs-h3">What I took away</h2>
+      <h2 class="cs-h3">What I learned</h2>
       <div class="cs-learnings">
         <div class="cs-learning-item">
-          <div class="cs-learning-num">01 · Learned</div>
-          <div class="cs-learning-text"><strong>Your key learning from this project.</strong> What skill grew the most?</div>
+          <div class="cs-learning-num">01 / Learned</div>
+          <div class="cs-learning-text">
+            <strong>The power of CSS Grid and Flexbox.</strong> Building this project gave me extreme confidence in translating any design mockup into a responsive web layout using pure CSS. It taught me how to control spacing and alignment precisely.
+          </div>
         </div>
         <div class="cs-learning-item">
-          <div class="cs-learning-num">02 · Would Do Differently</div>
-          <div class="cs-learning-text"><strong>What would you change?</strong> Be honest — it shows maturity.</div>
+          <div class="cs-learning-num">02 / Would Do Differently</div>
+          <div class="cs-learning-text">
+            <strong>Implement a CSS preprocessor.</strong> Managing standard CSS across a multi-page site can become repetitive. If I were to rebuild this, I would use SASS or a utility-first framework like Tailwind CSS to manage variables and improve development speed.
+          </div>
         </div>
         <div class="cs-learning-item">
-          <div class="cs-learning-num">03 · Proud Of</div>
-          <div class="cs-learning-text"><strong>What are you most proud of?</strong> A feature, a design detail, a line of code?</div>
+          <div class="cs-learning-num">03 / Proud Of</div>
+          <div class="cs-learning-text">
+            <strong>The smooth mobile experience.</strong> I am very proud of how the website feels on a mobile phone. The touch targets are appropriately sized, the text remains readable, and the navigation is highly intuitive.
+          </div>
         </div>
       </div>
     </div>
 
     <div class="cs-section reveal cs-section-actions">
-      <a href="#" class="btn-primary">View Live Site ↗</a>
-      <a href="#" class="btn-ghost">View on GitHub →</a>
+      <a href="https://blackpink-website.netlify.app/" class="btn-primary">View Live Site ↗</a>
+      <a href="https://github.com/jingsi-ng/black-pink.git" class="btn-ghost">View on GitHub →</a>
     </div>
 
   </div>

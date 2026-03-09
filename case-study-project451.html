@@ -114,19 +114,16 @@
     <!-- Technical -->
     <div class="cs-section reveal">
       <div class="cs-section-label">Technical Approach</div>
-      <h2 class="cs-h3">Building the frontend and backend</h2>
+      <h2 class="cs-h3">Building with Astro</h2>
       <div class="cs-section-body">
-         <p>
-          For this project, I wanted to push myself to build a fully functional web application instead of just a static prototype. 
+        <p>
+          To build this multi-page website efficiently, I chose <strong>Astro</strong> as my framework. Its component-based architecture allowed me to create reusable UI elements, such as the navigation menu and the footer, across all five pages. This approach kept my codebase clean and easy to maintain.
         </p>
         <p>
-          I chose <strong>Astro</strong> as my main framework. Its component-based architecture allowed me to build reusable UI parts easily. At the same time, its static site generation (SSG) features kept the website fast and simple to deploy. Astro's island architecture also ensured that JavaScript was only loaded when absolutely necessary.
+          I utilized CSS Flexbox and CSS Grid extensively to manage the complex layouts, especially for the statistics section and the image galleries. This ensured that the layout remained stable and responsive across all device sizes without relying on heavy CSS frameworks.
         </p>
         <p>
-          For the backend, I integrated <strong>Supabase</strong>. The preserved texts are stored in a live PostgreSQL database and fetched when the page loads. This was my first time connecting a frontend project to a live database, and it helped me understand how data flows in a real application.
-        </p>
-        <p>
-          I also implemented user authentication using Supabase Auth. Visitors must register a virtual keycard and log in to access the restricted archive. I managed the session state using vanilla JavaScript to ensure the restricted routes remain secure.
+          For interactivity, I wrote custom vanilla JavaScript to handle the mobile navigation toggle, smooth scrolling, and dynamic content sliders. Writing these scripts from scratch improved my logical problem-solving skills significantly.
         </p>
       </div>
     </div>
@@ -134,16 +131,13 @@
     <!-- Challenges -->
     <div class="cs-section reveal">
       <div class="cs-section-label">Challenges</div>
-      <h2 class="cs-h3">Overcoming technical problems</h2>
+      <h2 class="cs-h3">Designing the Playlist page</h2>
       <div class="cs-section-body">
         <p>
-          The biggest challenge was connecting Supabase's dynamic database with Astro's static site generation. Since the archive content is user-generated, it cannot be pre-rendered at build time. I solved this by selectively using Astro's server-side rendering mode for the dynamic routes while keeping the rest of the site static.
+          The most demanding part of the project was designing and building the <strong>Playlist page</strong>. Displaying a long list of tracks, album covers, and interactive elements can easily become visually messy. I had to structure the layout very carefully to ensure a clean user experience.
         </p>
         <p>
-          I also chose to manage the client-side session state using <strong>vanilla JavaScript</strong> instead of a framework like React. Writing the authentication checks and redirects from scratch was difficult. However, it forced me to deeply understand how web applications handle user sessions behind the scenes.
-        </p>
-        <p>
-          Finally, getting the warning modal to feel right took time. I had to balance storytelling with usability. If the animations were too long, it would annoy the user. I eventually settled on a simple typewriter reveal effect to keep it engaging but fast.
+          Ensuring the track details aligned perfectly on both large desktop monitors and small smartphone screens required complex CSS Grid management. I spent a lot of time adjusting the spacing, typography, and hover effects on the playlist to make it feel like a premium music application.
         </p>
       </div>
     </div>
@@ -154,26 +148,25 @@
       <h2 class="cs-h3">What I learned</h2>
       <div class="cs-learnings">
         <div class="cs-learning-item">
-           <div class="cs-learning-num">01 / Learned</div>
+          <div class="cs-learning-num">01 / Learned</div>
           <div class="cs-learning-text">
-            <strong>Connecting to a backend changes how you design.</strong> Once the archive became a live database rather than static HTML, I had to think about empty states, loading screens, and errors. It taught me that UX design and software engineering are deeply connected.
+            <strong>The efficiency of component frameworks.</strong> Using Astro taught me how to break down a web design into smaller, reusable components. Combined with CSS Grid, it gave me extreme confidence in building multi-page platforms.
           </div>
         </div>
         <div class="cs-learning-item">
           <div class="cs-learning-num">02 / Would Do Differently</div>
           <div class="cs-learning-text">
-            <strong>Planning the database structure is crucial.</strong> I had to rebuild my Supabase tables halfway through the project because my initial plan did not support data filtering. Next time, I will spend more time designing the data structure before writing any code.
+            <strong>Fetch playlist data dynamically.</strong> Currently, the playlist items are hardcoded in the HTML structure. If I were to rebuild this, I would store the song data in a JSON file or an API and map through it to generate the list dynamically.
           </div>
         </div>
         <div class="cs-learning-item">
           <div class="cs-learning-num">03 / Proud Of</div>
           <div class="cs-learning-text">
-            <strong>Maintaining a consistent story.</strong> I am proud that every part of the website fits the same dystopian theme. From the login screen to the empty search results, the visual design and the code work together to tell a complete story.
+            <strong>The smooth mobile experience.</strong> I am very proud of how the website feels on a mobile phone. The touch targets are appropriately sized, the text remains readable, and the navigation is highly intuitive.
           </div>
         </div>
       </div>
     </div>
-  </div>
 
     <!-- Links -->
     <div class="cs-section reveal cs-section-actions">
